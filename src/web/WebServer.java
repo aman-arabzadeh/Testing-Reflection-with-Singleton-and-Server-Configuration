@@ -10,7 +10,7 @@ public class WebServer {
     public void startServer() throws IOException {
         Serverkonfiguration konfiguration = Serverkonfiguration.getInstans();
 
-        // Skapa server på specificerad port
+        // Skapa server ex:  port: 8080
         HttpServer server = HttpServer.create(konfiguration.hamtaAdress(), 0);
 
         // Skapa en context för "/greeting"
